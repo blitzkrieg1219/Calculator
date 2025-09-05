@@ -54,32 +54,19 @@ demo/
 2. 「実行とデバッグ」の上部にあるドロップダウンから実行したい設定を選択します。
 3. ドロップダウン横のボタンをクリックすると実行します。
 
-#### 利用可能な実行設定
-- **Calculator - 基本実行**: `10 + 5` の計算
-- **Calculator - 減算テスト**: `20 - 8` の計算
-- **Calculator - 乗算テスト**: `6 * 7` の計算
-- **Calculator - 除算テスト**: `15 / 3` の計算
-- **Calculator - エラーテスト（ゼロ除算）**: `10 / 0` のエラー確認
-- **Calculator - エラーテスト（無効な数値）**: `abc + 5` のエラー確認
-- **Calculator - エラーテスト（無効な演算子）**: `10 % 5` のエラー確認
-- **Calculator - 引数不足テスト**: `10` のみの引数不足エラー確認
-
 #### 引数を変えたい場合
 1. `launch.json` ファイルを開きます。
 2. 各設定の `"args"` 配列を編集してください
 
 ```
-    "configurations": [
+    "configurations": [       
         {
             "type": "java",
-            "name": "Calculator - 基本実行",
+            "name": "Calculator",
             "request": "launch",
             "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["10", "+", "5"],　←ここの値を修正する
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
+            "args": ["10", "+", "5"]   <=ここを修正する
+        }
+    ]
 ```
 3. 保存後、編集した実行設定（上記の例だと「基本実行」）を選択して実行します。

@@ -1,93 +1,15 @@
 {
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [       
         {
             "type": "java",
-            "name": "Calculator - 基本実行",
+            "name": "Calculator",
             "request": "launch",
             "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["10", "+", "5"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - 減算テスト",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["20", "-", "8"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - 乗算テスト",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["6", "*", "7"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - 除算テスト",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["15", "/", "3"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - エラーテスト（ゼロ除算）",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["10", "/", "0"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - エラーテスト（無効な数値）",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["abc", "+", "5"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - エラーテスト（無効な演算子）",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["10", "%", "5"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "java",
-            "name": "Calculator - 引数不足テスト",
-            "request": "launch",
-            "mainClass": "Calculator",
-            "classPaths": ["${workspaceFolder}/src"],
-            "modulePaths": [],
-            "args": ["10"],
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}"
+            "args": ["10", "+", "5"]
         }
     ]
 }
